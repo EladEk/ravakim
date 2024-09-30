@@ -1,0 +1,155 @@
+.quiz-container {
+  text-align: center;
+  direction: rtl; /* Optional: if you want the entire layout to be right-to-left */
+/* Remove the closing curly brace */
+}
+
+.answer-container {
+  position: relative;
+  display: inline-block;
+}
+
+.question-image {
+  max-width: 100%;
+  max-height: 250px; /* Adjust the height as needed */
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.additional-text {
+  margin-bottom: 10px; /* Adjust as needed */
+  font-size: 0.5em; /* Adjust as needed */
+  text-align: center; /* Center the text */
+}
+
+.answer-container img {
+  border-radius: 190px;
+  width: 400px; /* Adjust the width to be twice as big */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer;
+}
+
+.answer-text {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust text color as needed */
+  font-size: 32px; /* Adjust font size to be twice as big */
+  font-weight: bold; /* Adjust font weight as needed */
+  text-shadow: 1px 1px 2px black; /* Optional: Add text shadow for better readability */
+}
+
+.answer-button {
+  border-radius: 190px;
+  color: green; /* Adjust color for correct answer */
+}
+
+.answer-button:HOVER, .answer-button:active {
+  opacity: 0.9;
+}
+.answer-button:disabled {
+  opacity: 0.5;
+}
+
+
+.answer-button.correct .answer-text {
+  color: green; /* Adjust color for correct answer */
+}
+
+.answer-button.incorrect .answer-text {
+  color: red; /* Adjust color for incorrect answer */
+}
+
+.quiz-title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quiz-title-img {
+  width: 1200px;
+  height: auto;
+  border-radius: 300px;
+}
+
+.quiz-title-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke; /* Adjust color as needed */
+  font-size: 450%; /* Adjust font size as needed */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add text shadow for better readability */
+}
+
+.timer {
+  left: auto;
+  position: Right;
+  font-size: 45px; /* Adjust font size to be twice as big */
+  font-weight: bold;
+  color: white
+}
+
+.timer.warning {
+  left: 10%;
+  position: Right;
+  color: red; /* Change color to red during the last 10 seconds */
+  font-size: 64px;
+  
+}
+
+.correct-answer_Wrong {
+  font-size: 60px; /* Adjust font size to be large */
+  font-weight: bold;
+  color: red; /* Adjust color as needed */
+  background-color: black;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 90px;
+}
+
+.correct-answer_Right {
+  font-size: 60px; /* Adjust font size to be large */
+  font-weight: bold;
+  color: green; /* Adjust color as needed */
+  background-color: black;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 90px;
+}
+
+
+.back-to-categories-error {
+  position: absolute;
+  top: 320px; /* Adjust this value to position the button from the top */
+  width: 100%;
+  text-align: center;
+}
+
+.back-to-categories-img {
+  width: 250px; /* Adjust the size as needed */
+  height: auto;
+  border-radius: 100px;
+}
+
+.back-to-categories-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; /* Adjust the color as needed */
+  font-size: 40px; /* Adjust the size as needed */
+  font-weight: bold;
+  text-align: center;
+}
+
+.back-to-categories-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}

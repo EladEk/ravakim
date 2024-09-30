@@ -1,0 +1,114 @@
+.quiz-container {
+  text-align: center;
+  direction: rtl; /* Optional: if you want the entire layout to be right-to-left */
+}
+
+.answer-container {
+  position: relative;
+  display: inline-block;
+}
+
+.answer-container img {
+  width: 400px; /* Adjust the width to be twice as big */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.answer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust text color as needed */
+  font-size: 32px; /* Adjust font size to be twice as big */
+  font-weight: bold; /* Adjust font weight as needed */
+  text-shadow: 1px 1px 2px black; /* Optional: Add text shadow for better readability */
+}
+
+.answer-button.correct .answer-text {
+  color: green; /* Adjust color for correct answer */
+}
+
+.answer-button.incorrect .answer-text {
+  color: red; /* Adjust color for incorrect answer */
+}
+
+.quiz-title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quiz-title-img {
+  width: 1200px;
+  height: auto;
+}
+
+.quiz-title-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red; /* Adjust color as needed */
+  font-size: 450%; /* Adjust font size as needed */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add text shadow for better readability */
+}
+
+.timer {
+  font-size: 45px; /* Adjust font size to be twice as big */
+  font-weight: bold;
+  color: white
+}
+
+.timer.warning {
+  color: red; /* Change color to red during the last 10 seconds */
+  font-size: 64px;
+}
+
+.correct-answer {
+  font-size: 32px; /* Adjust font size to be large */
+  font-weight: bold;
+  color: gold; /* Adjust color as needed */
+  background-color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-to-categories-error {
+  position: absolute;
+  top: 320px; /* Adjust this value to position the button from the top */
+  width: 100%;
+  text-align: center;
+}
+
+.question_error {
+  position: absolute;
+  top: 20px; /* Adjust this value to position the button from the top */
+  width: 100%;
+  color: red;
+  background-color: blanchedalmond;
+  text-align: center;
+  font-size: 64px;
+}
+
+.back-to-categories-img {
+  width: 250px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.back-to-categories-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; /* Adjust the color as needed */
+  font-size: 40px; /* Adjust the size as needed */
+  font-weight: bold;
+  text-align: center;
+}
+
+.back-to-categories-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
